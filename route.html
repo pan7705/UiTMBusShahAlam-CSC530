@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>UiTM BUS Shah Alam</title>
+    <link rel="icon" href="img/logoUiTM.png" type="image/x-icon">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="Free HTML Templates" name="keywords">
+    <meta content="Free HTML Templates" name="description">
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Navbar Start -->
+    <div class="container-fluid p-0">
+        <nav class="navbar navbar-expand-lg bg-light navbar-light py-3 py-lg-0 px-lg-5">
+            <a href="index.php" class="navbar-brand ml-lg-3">
+                <h4 class="m-0 display-5"><img src="img/logoUiTM.png" style="width: 40px; padding-right: 5px;">UiTM BUS Shah Alam</h4>
+            </a>
+            <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-between px-lg-3" id="navbarCollapse">
+                <div class="navbar-nav m-auto py-0">
+                    <a href="index.php" class="nav-item nav-link">Home</a>
+                    <a href="schedule.html" class="nav-item nav-link">Schedule</a>
+                    <a href="route.html" class="nav-item nav-link active">Route</a>
+                    <a href="nearest.html" class="nav-item nav-link">Nearest Bus Stop</a>
+                    <a href="location.html" class="nav-item nav-link">Location</a>
+                    <a href="feedbackform.php" class="nav-item nav-link">Feedback</a>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <!-- Navbar End -->
+
+
+    <!-- Header Start -->
+    <div class="jumbotron jumbotron-fluid mb-5">
+        <div class="container text-center py-5">
+            <h1 class="text-white display-3">Route</h1>
+            <div class="d-inline-flex align-items-center text-white">
+                <p class="m-0"><a class="text-white" href="index.php">Home</a></p>
+                <i class="fa fa-circle px-3"></i>
+                <p class="m-0">Route</p>
+            </div>
+        </div>
+    </div>
+    <!-- Header End -->
+
+
+    <!-- Route Card -->
+    <div class="container">
+        <div class="row text-center">
+            <div class="col-md-4 mb-5 d-flex flex-column">
+                <div class="card h-100">
+                    <div class="bg-secondary h-100">
+                        <div class="text-center p-4">
+                            <h1 class="display-4 mb-0">
+                                Bas A
+                            </h1>
+                        </div>
+                        <div class="bg-primary text-center p-4">
+                            <h3 class="m-0">Padang Kawad - Budi Siswa</h3>
+                        </div>
+                        <div class="d-flex flex-column align-items-center py-4">
+                            <p class="text-center">Padang Kawad - Hentian Budi Siswa - Padang Kawad</p>
+                            <p>Jarak Perjalanan : <b>2.1KM</b></p>
+                            <p>Jumlah Bas : <b>3 Bas</b></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="mt-auto">
+                    <a href="" class="btn btn-primary btn-block" data-toggle="modal" data-target="#imageModal">See image</a>
+                </div>
+
+                <!-- Modal start -->
+                <div class="modal fade" id="imageModal" tabindex="-1" role="dialog" aria-labelledby="imageModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered" role="document">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h5 class="modal-title" id="imageModalLabel">Laluan Bas A</h5>
+                          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                          </button>
+                        </div>
+                        <div class="modal-body">
+                          <img src="img/laluanBasA.jpg" class="img-fluid" alt="Popup Image">
+                        </div>
+
+                        <div class="modal-footer">
+                          <a href="img/laluanBasA.jpg" download="LaluanBasA.jpg" class="btn btn-primary" onclick="downloadImage('img/laluanBasA.jpg','LaluanBasA.jpg')">
+                            <i class="fas fa-download mr-1"></i> Download <!--to download the image-->
+                          </a> 
+                        </div>
+                      </div>
+                    </div>
+                </div>
+                  <!-- Modal end -->
+            </div>
+
+
+            <div class="col-md-4 mb-5 d-flex flex-column">
+                <div class="card h-100">
+                    <div class="bg-secondary h-100">
+                        <div class="text-center p-4">
+                            <h1 class="display-4 mb-0">
+                              Bas B
+                            </h1>
+                        </div>
+                        <div class="bg-primary text-center p-4">
+                            <h3 class="m-0">Kolej Mawar(DC) - Kolej Seroja</h3>
+                        </div>
+                        <div class="d-flex flex-column align-items-center py-4 p-3">
+                            <p>Hentian Mawar (Dc) - Hentian Pusat Kesihatan -
+                                Hentian Anggerik - Padang Kawad - Hentian Seroja
+                                - Hentian Fskm - Hentian Fkpm (Mascom) -
+                                Hentian Mawar (Dc). </p>
+                            <p>Jarak Perjalanan : <b>2.7KM</b></p>
+                            <p>Jumlah Bas : <b>3 Bas</b></p>
+                            <!-- <a href="" class="btn btn-primary py-2 px-4 my-2">Order Now</a> -->
+                        </div>
+                    </div>
+                </div>
+                <div class="mt-auto">
+                    <a href="" class="btn btn-primary btn-block" data-toggle="modal" data-target="#imageModal2">See image</a>
+                </div>
+
+                 <!-- Modal start -->
+                <div class="modal fade" id="imageModal2" tabindex="-1" role="dialog" aria-labelledby="imageModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                        <h5 class="modal-title" id="imageModalLabel">Laluan Bas B</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                        </div>
+                        <div class="modal-body">
+                        <img src="img/laluanBasB.jpg" class="img-fluid" alt="Popup Image">
+                        </div>
+
+                        <div class="modal-footer">
+                        <a href="img/laluanBasB.jpg" download="LaluanBasB.jpg" class="btn btn-primary">
+                            <i class="fas fa-download mr-1"></i> Download
+                        </a>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+                <!-- Modal end -->
+            </div>
+
+
+            <div class="col-md-4 mb-5 d-flex flex-column">
+                <div class="card h-100">
+                    <div class="bg-secondary h-100">
+                        <div class="text-center p-4">
+                            <h1 class="display-4 mb-0">
+                                Bas C
+                            </h1>
+                        </div>
+                        <div class="bg-primary text-center p-4">
+                            <h3 class="m-0">Seksyen 7 - Kampus Shah Alam</h3>
+                        </div>
+                        <div class="d-flex flex-column align-items-center py-4 p-4">
+                            <p>Hentian Pusat Komersial Sek. 7 - Hentian I-City -
+                                Hentian Flat Pkns - Hentian Masjid Jalan Kristal -
+                                Hentian Tasik - Hentian Hospital - Hentian
+                                Anggerik - Hentian Perindu - Hentian Seroja -
+                                Hentian Fskm - Hentian Fkpm (Mascom) - Hentian
+                                Mawar (Dc) - Hentian Pusat Kesihatan - Hentian
+                                Pusat Komersial Sek. 7. 
+                                </p>
+                                <p>Jarak Perjalanan : <b>5.2KM</b></p>
+                                <p>Jumlah Bas : <b>6 Bas</b></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="mt-auto">
+                    <a href="" class="btn btn-primary btn-block" data-toggle="modal" data-target="#imageModal3">See image</a>
+                </div>
+
+                <!-- Modal start -->
+                <div class="modal fade" id="imageModal3" tabindex="-1" role="dialog" aria-labelledby="imageModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered" role="document">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h5 class="modal-title" id="imageModalLabel">Laluan Bas C</h5>
+                          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                          </button>
+                        </div>
+                        <div class="modal-body">
+                          <img src="img/laluanBasC.jpg" class="img-fluid" alt="Popup Image">
+                        </div>
+
+                        <div class="modal-footer">
+                          <a href="img/laluanBasC.jpg" download="laluanBasC.jpg" class="btn btn-primary">
+                            <i class="fas fa-download mr-1"></i> Download
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="col-md-4 mb-5 d-flex flex-column pt-4">
+                <div class="card h-100">
+                    <div class="bg-secondary h-100">
+                        <div class="text-center p-4">
+                            <h1 class="display-4 mb-0">
+                                Bas C2
+                            </h1>
+                        </div>
+                        <div class="bg-primary text-center p-4">
+                            <h3 class="m-0">i-City - Kampus Shah Alam</h3>
+                        </div>
+                        <div class="d-flex flex-column align-items-center py-4 p-4">
+                            <p>I-City - Hentian Flat Pkns - Hentian Masjid Jalan
+                                Kristal - Hentian Tasik - Hentian Hospital - Hentian
+                                Anggerik - Hentian Perindu - Hentian Seroja -
+                                Hentian Fskm - Hentian Fkpm (Mascom) - Hentian
+                                Mawar (Dc) - Hentian Pusat Kesihatan - Hentian
+                                Pusat Komersial Sek. 7 - I-City.</p>
+                            <p>Jarak Perjalanan : <b>11.2KM</b></p>
+                            <p>Jumlah Bas : <b>3 Bas</b></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="mt-auto">
+                    <a href="" class="btn btn-primary btn-block" data-toggle="modal" data-target="#imageModal4">See image</a>
+                </div>
+
+                <!-- Modal start -->
+                <div class="modal fade" id="imageModal4" tabindex="-1" role="dialog" aria-labelledby="imageModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered" role="document">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h5 class="modal-title" id="imageModalLabel">Laluan Bas C2</h5>
+                          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                          </button>
+                        </div>
+                        <div class="modal-body">
+                          <img src="img/laluanBasC2.jpg" class="img-fluid" alt="Popup Image">
+                        </div>
+
+                        <div class="modal-footer">
+                          <a href="img/laluanBasC2.jpg" download="LaluanBasC2.jpg" class="btn btn-primary">
+                            <i class="fas fa-download mr-1"></i> Download
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="col-md-4 mb-5 d-flex flex-column pt-4">
+                <div class="card h-100">
+                    <div class="bg-secondary h-100">
+                        <div class="text-center p-4">
+                            <h1 class="display-4 mb-0">
+                                Bas D
+                            </h1>
+                        </div>
+                        <div class="bg-primary text-center p-4">
+                            <h3 class="m-0">Bus Stop Seksyen 2 - Kampus Shah Alam</h3>
+                        </div>
+                        <div class="d-flex flex-column align-items-center py-4 p-4">
+                            <p>Hentian Bas Seksyen 2 - Hentian Fskm - Hentian
+                                Fkpm (Mascom) - Hentian Mawar (Dc) - Hentian
+                                Pusat Kesihatan - Hentian Anggerik - Padang
+                                Kawad - Hentian Seroja - Hentian Pangsapuri
+                                Baiduri - Hentian Bas Seksyen 2. 
+                                </p>
+                            <p>Jarak Perjalanan : <b>4.8KM</b></p>
+                            <p>Jumlah Bas : <b>4 Bas</b></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="mt-auto">
+                    <a href="" class="btn btn-primary btn-block" data-toggle="modal" data-target="#imageModal5">See image</a>
+                </div>
+
+                <!-- Modal start -->
+                <div class="modal fade" id="imageModal5" tabindex="-1" role="dialog" aria-labelledby="imageModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered" role="document">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h5 class="modal-title" id="imageModalLabel">Laluan Bas D</h5>
+                          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                          </button>
+                        </div>
+                        <div class="modal-body">
+                          <img src="img/laluanBasD.jpg" class="img-fluid" alt="Popup Image">
+                        </div>
+
+                        <div class="modal-footer">
+                          <a href="img/laluanBasD.jpg" download="LaluanBasD.jpg" class="btn btn-primary">
+                            <i class="fas fa-download mr-1"></i> Download
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="col-md-4 mb-5 d-flex flex-column pt-4">
+                <div class="card h-100">
+                    <div class="bg-secondary h-100">
+                        <div class="text-center p-4">
+                            <h1 class="display-4 mb-0">
+                                Bas E
+                            </h1>
+                        </div>
+                        <div class="bg-primary text-center p-4">
+                            <h3 class="m-0">Kolej Mawar (DC) - Intec</h3>
+                        </div>
+                        <div class="d-flex flex-column align-items-center py-4 p-4">
+                            <p>Hentian Mawar (Dc) - Hentian Pusat Kesihatan -
+                                Hentian Anggerik - Hentian Perindu - Hentian
+                                Seroja - Intec Sek 17 - Hentian Fskm - Hentian
+                                Fkpm (Mascom) - Hentian Mawar (Dc) 
+                                </p>
+                            <p>Jarak Perjalanan : <b>8.9KM</b></p>
+                            <p>Jumlah Bas : <b>3 Bas</b></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="mt-auto">
+                    <a href="" class="btn btn-primary btn-block" data-toggle="modal" data-target="#imageModal6">See image</a>
+                </div>
+
+                <!-- Modal start -->
+                <div class="modal fade" id="imageModal6" tabindex="-1" role="dialog" aria-labelledby="imageModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered" role="document">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h5 class="modal-title" id="imageModalLabel">Laluan Bas E</h5>
+                          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                          </button>
+                        </div>
+                        <div class="modal-body">
+                          <img src="img/laluanBasE.jpg" class="img-fluid" alt="Popup Image">
+                        </div>
+
+                        <div class="modal-footer">
+                          <a href="img/laluanBasE.jpg" download="LaluanBasE.jpg" class="btn btn-primary">
+                            <i class="fas fa-download mr-1"></i> Download
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="col-md-4 mb-5 d-flex flex-column pt-4">
+                <div class="card h-100">
+                    <div class="bg-secondary h-100">
+                        <div class="text-center p-4">
+                            <h1 class="display-4 mb-0">
+                                Bas G
+                            </h1>
+                        </div>
+                        <div class="bg-primary text-center p-4">
+                            <h3 class="m-0">Kolej Mawar - Kolej Perindu</h3>
+                        </div>
+                        <div class="d-flex flex-column align-items-center py-4 p-4">
+                            <p>Hentian Mawar (Dc) - Hentian Pusat Kesihatan -
+                                Hentian Anggerik - Hentian Perindu - Hentian
+                                Seroja - Hentian Fskm - Hentian Fkpm (Mascom) -
+                                Hentian Mawar (Dc).</p>
+                            <p>Jarak Perjalanan : <b>2.6KM</b></p>
+                            <p>Jumlah Bas : <b>4 Bas</b></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="mt-auto">
+                    <a href="" class="btn btn-primary btn-block" data-toggle="modal" data-target="#imageModal7">See image</a>
+                </div>
+
+                <!-- Modal start -->
+                <div class="modal fade" id="imageModal7" tabindex="-1" role="dialog" aria-labelledby="imageModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered" role="document">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h5 class="modal-title" id="imageModalLabel">Laluan Bas G</h5>
+                          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                          </button>
+                        </div>
+                        <div class="modal-body">
+                          <img src="img/laluanBasG.jpg" class="img-fluid" alt="Popup Image">
+                        </div>
+
+                        <div class="modal-footer">
+                          <a href="img/laluanBasG.jpg" download="LaluanBasG.jpg" class="btn btn-primary">
+                            <i class="fas fa-download mr-1"></i> Download
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Route Card End -->
+
+
+    <!-- Footer Start -->
+    <div class="container-fluid bg-dark text-white mt-5 py-5 px-sm-3 px-md-5">
+        <div class="row pt-5">
+            <div class=" col-md-6 mb-5">
+                <h3 class="text-primary mb-4">Get In Touch</h3>
+                    <p><i class="fa fa-map-marker-alt mr-2"></i>Jalan Ilmu 1/1, 40450 Shah Alam, Selangor</p>
+                    <p><i class="fa fa-phone-alt mr-2"></i>+603-5544 2000</p>
+                    <p><i class="fa fa-envelope mr-2"></i>uitmshahalam@biz.com</p>
+                    <div class="d-flex justify-content-start mt-4">
+                        <a class="btn btn-outline-light btn-social mr-2" href="#"><i class="fab fa-twitter"></i></a>
+                        <a class="btn btn-outline-light btn-social mr-2" href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a class="btn btn-outline-light btn-social mr-2" href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a class="btn btn-outline-light btn-social" href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+            </div>
+
+            <div class="col-md-6 mb-4">
+                <h3 class="text-primary mb-4">Quick Links</h3>
+                    <div class="d-flex flex-column justify-content-start">
+                        <a class="text-white mb-2" href="schedule.html"><i class="fa fa-angle-right mr-2"></i>Schedule</a>
+                        <a class="text-white mb-2" href="route.html"><i class="fa fa-angle-right mr-2"></i>Route</a>
+                        <a class="text-white mb-2" href="nearest.html"><i class="fa fa-angle-right mr-2"></i>Nearest Bus Stop</a>
+                        <a class="text-white" href="location.html"><i class="fa fa-angle-right mr-2"></i>Location</a>
+                        <a class="text-white" href="feedbackform.php"><i class="fa fa-angle-right mr-2"></i>Feedback</a>
+                    </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer End -->
+
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-lg btn-primary back-to-top"><i class="fa fa-angle-double-up"></i></a>
+
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/counterup/counterup.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+
+    <!-- Contact Javascript File -->
+    <script src="mail/jqBootstrapValidation.min.js"></script>
+    <script src="mail/contact.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+
+
+    <!-- Download image -->
+    <script>
+        function downloadImage(imageUrl, fileName) {
+            var link = document.createElement('a');
+            link.href = imageUrl;
+            link.download = fileName;
+            document.body.appendChild(link);
+            link.click();
+            document.body.removeChild(link);
+         }
+    </script>
+</body>
+</html>
